@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MyCanvas.h"
 @interface ViewController : UIViewController
 
 
