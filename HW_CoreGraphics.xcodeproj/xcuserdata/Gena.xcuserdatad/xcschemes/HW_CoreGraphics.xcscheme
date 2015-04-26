@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A86A885E1AE440A4002488A1"
+               BlueprintIdentifier = "B2BF11511AE82F2A00961C5B"
                BuildableName = "HW_CoreGraphics.app"
                BlueprintName = "HW_CoreGraphics"
                ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A86A88771AE440A4002488A1"
+               BlueprintIdentifier = "B2BF11661AE82F2A00961C5B"
                BuildableName = "HW_CoreGraphicsTests.xctest"
                BlueprintName = "HW_CoreGraphicsTests"
                ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A86A88771AE440A4002488A1"
+               BlueprintIdentifier = "B2BF11661AE82F2A00961C5B"
                BuildableName = "HW_CoreGraphicsTests.xctest"
                BlueprintName = "HW_CoreGraphicsTests"
                ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A86A885E1AE440A4002488A1"
+            BlueprintIdentifier = "B2BF11511AE82F2A00961C5B"
             BuildableName = "HW_CoreGraphics.app"
             BlueprintName = "HW_CoreGraphics"
             ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A86A885E1AE440A4002488A1"
+            BlueprintIdentifier = "B2BF11511AE82F2A00961C5B"
             BuildableName = "HW_CoreGraphics.app"
             BlueprintName = "HW_CoreGraphics"
             ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A86A885E1AE440A4002488A1"
+            BlueprintIdentifier = "B2BF11511AE82F2A00961C5B"
             BuildableName = "HW_CoreGraphics.app"
             BlueprintName = "HW_CoreGraphics"
             ReferencedContainer = "container:HW_CoreGraphics.xcodeproj">
