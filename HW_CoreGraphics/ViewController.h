@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyTree.h"
 
 @interface ViewController : UIViewController
 

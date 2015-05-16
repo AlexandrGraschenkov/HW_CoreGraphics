@@ -10,18 +10,29 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) MyTree *myView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _myView = [[MyTree alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_myView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)releaseOutlets{
+    _myView=nil;
 }
+-(void)viewDidUnload{
+    [super viewDidUnload];
+    [self releaseOutlets];
+}
+-(void)dealloc{
+    [self releaseOutlets];
+}
+
+
 
 @end
