@@ -2,8 +2,8 @@
 //  ViewController.m
 //  HW_CoreGraphics
 //
-//  Created by Alexander on 19.04.15.
-//  Copyright (c) 2015 Alexander. All rights reserved.
+//  Created by Михаил on 01.05.14.
+//  Copyright (c) 2014 Михаил. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -14,12 +14,14 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
