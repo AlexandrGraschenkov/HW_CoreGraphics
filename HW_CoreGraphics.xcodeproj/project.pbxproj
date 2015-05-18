@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1ADC035A1B07C3B70077D884 /* MyTree.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC03591B07C3B70077D884 /* MyTree.mm */; };
+		1A863CCC1B0A45B300501B9B /* MyTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A863CCB1B0A45B300501B9B /* MyTree.m */; };
+		1A863CD21B0A65F600501B9B /* Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A863CD11B0A65F600501B9B /* Points.m */; };
 		A86A88651AE440A4002488A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88641AE440A4002488A1 /* main.m */; };
 		A86A88681AE440A4002488A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88671AE440A4002488A1 /* AppDelegate.m */; };
 		A86A886B1AE440A4002488A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A886A1AE440A4002488A1 /* ViewController.m */; };
@@ -28,8 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ADC03581B07C3B70077D884 /* MyTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTree.h; sourceTree = "<group>"; };
-		1ADC03591B07C3B70077D884 /* MyTree.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyTree.mm; sourceTree = "<group>"; };
+		1A863CCA1B0A45B300501B9B /* MyTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTree.h; sourceTree = "<group>"; };
+		1A863CCB1B0A45B300501B9B /* MyTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTree.m; sourceTree = "<group>"; };
+		1A863CD01B0A65F600501B9B /* Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Points.h; sourceTree = "<group>"; };
+		1A863CD11B0A65F600501B9B /* Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Points.m; sourceTree = "<group>"; };
 		A86A885F1AE440A4002488A1 /* HW_CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86A88631AE440A4002488A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86A88641AE440A4002488A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,16 +87,18 @@
 		A86A88611AE440A4002488A1 /* HW_CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				1A863CD01B0A65F600501B9B /* Points.h */,
+				1A863CD11B0A65F600501B9B /* Points.m */,
 				A86A88661AE440A4002488A1 /* AppDelegate.h */,
 				A86A88671AE440A4002488A1 /* AppDelegate.m */,
+				1A863CCA1B0A45B300501B9B /* MyTree.h */,
+				1A863CCB1B0A45B300501B9B /* MyTree.m */,
 				A86A88691AE440A4002488A1 /* ViewController.h */,
 				A86A886A1AE440A4002488A1 /* ViewController.m */,
 				A86A886C1AE440A4002488A1 /* Main.storyboard */,
 				A86A886F1AE440A4002488A1 /* Images.xcassets */,
 				A86A88711AE440A4002488A1 /* LaunchScreen.xib */,
 				A86A88621AE440A4002488A1 /* Supporting Files */,
-				1ADC03581B07C3B70077D884 /* MyTree.h */,
-				1ADC03591B07C3B70077D884 /* MyTree.mm */,
 			);
 			path = HW_CoreGraphics;
 			sourceTree = "<group>";
@@ -225,7 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86A886B1AE440A4002488A1 /* ViewController.m in Sources */,
-				1ADC035A1B07C3B70077D884 /* MyTree.mm in Sources */,
+				1A863CCC1B0A45B300501B9B /* MyTree.m in Sources */,
+				1A863CD21B0A65F600501B9B /* Points.m in Sources */,
 				A86A88681AE440A4002488A1 /* AppDelegate.m in Sources */,
 				A86A88651AE440A4002488A1 /* main.m in Sources */,
 			);

@@ -10,29 +10,16 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) MyTree *myView;
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _myView = [[MyTree alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_myView];
+    
+    MyTree *myView = [[MyTree alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:myView];
 }
-
--(void)releaseOutlets{
-    _myView=nil;
-}
--(void)viewDidUnload{
-    [super viewDidUnload];
-    [self releaseOutlets];
-}
--(void)dealloc{
-    [self releaseOutlets];
-}
-
 
 
 @end
