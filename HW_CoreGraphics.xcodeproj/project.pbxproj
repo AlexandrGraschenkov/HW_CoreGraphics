@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849F79B71B0D02E700F2376F /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F79B61B0D02E700F2376F /* Tree.m */; };
+		849F79BA1B0D02ED00F2376F /* Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F79B91B0D02ED00F2376F /* Points.m */; };
 		A86A88651AE440A4002488A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88641AE440A4002488A1 /* main.m */; };
 		A86A88681AE440A4002488A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88671AE440A4002488A1 /* AppDelegate.m */; };
 		A86A886B1AE440A4002488A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A886A1AE440A4002488A1 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		849F79B51B0D02E700F2376F /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		849F79B61B0D02E700F2376F /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		849F79B81B0D02ED00F2376F /* Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Points.h; sourceTree = "<group>"; };
+		849F79B91B0D02ED00F2376F /* Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Points.m; sourceTree = "<group>"; };
 		A86A885F1AE440A4002488A1 /* HW_CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86A88631AE440A4002488A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86A88641AE440A4002488A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849F79BB1B0D131200F2376F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A86A88661AE440A4002488A1 /* AppDelegate.h */,
+				A86A88671AE440A4002488A1 /* AppDelegate.m */,
+				849F79B81B0D02ED00F2376F /* Points.h */,
+				849F79B91B0D02ED00F2376F /* Points.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		849F79BC1B0D131B00F2376F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A86A886C1AE440A4002488A1 /* Main.storyboard */,
+				A86A886F1AE440A4002488A1 /* Images.xcassets */,
+				A86A88711AE440A4002488A1 /* LaunchScreen.xib */,
+				849F79B51B0D02E700F2376F /* Tree.h */,
+				849F79B61B0D02E700F2376F /* Tree.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		849F79BD1B0D132000F2376F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A86A88691AE440A4002488A1 /* ViewController.h */,
+				A86A886A1AE440A4002488A1 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		A86A88561AE440A4002488A1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +119,9 @@
 		A86A88611AE440A4002488A1 /* HW_CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				A86A88661AE440A4002488A1 /* AppDelegate.h */,
-				A86A88671AE440A4002488A1 /* AppDelegate.m */,
-				A86A88691AE440A4002488A1 /* ViewController.h */,
-				A86A886A1AE440A4002488A1 /* ViewController.m */,
-				A86A886C1AE440A4002488A1 /* Main.storyboard */,
-				A86A886F1AE440A4002488A1 /* Images.xcassets */,
-				A86A88711AE440A4002488A1 /* LaunchScreen.xib */,
+				849F79BD1B0D132000F2376F /* Controller */,
+				849F79BC1B0D131B00F2376F /* View */,
+				849F79BB1B0D131200F2376F /* Model */,
 				A86A88621AE440A4002488A1 /* Supporting Files */,
 			);
 			path = HW_CoreGraphics;
@@ -220,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86A886B1AE440A4002488A1 /* ViewController.m in Sources */,
+				849F79B71B0D02E700F2376F /* Tree.m in Sources */,
+				849F79BA1B0D02ED00F2376F /* Points.m in Sources */,
 				A86A88681AE440A4002488A1 /* AppDelegate.m in Sources */,
 				A86A88651AE440A4002488A1 /* main.m in Sources */,
 			);
@@ -348,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_CoreGraphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_CoreGraphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +454,7 @@
 				A86A88841AE440A4002488A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A86A88851AE440A4002488A1 /* Build configuration list for PBXNativeTarget "HW_CoreGraphicsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +463,7 @@
 				A86A88871AE440A4002488A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
