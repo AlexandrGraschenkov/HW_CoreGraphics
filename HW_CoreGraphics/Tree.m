@@ -13,7 +13,7 @@
 {
     double width;
     double height;
-
+    
 }
 
 
@@ -26,11 +26,11 @@
 - (void)drawRect:(CGRect)rect
 {
     
-   height = 256;
-   width = 20;
+    height = 256;
+    width = 20;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-   
+    
     NSMutableArray *branch = [NSMutableArray arrayWithObject:[[Points alloc] initWithPoint:CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds)) angle:0]];
     NSMutableArray *branch2 = [NSMutableArray new];
     
@@ -52,7 +52,7 @@
             
             [branch2 addObject:np1];
             [branch2 addObject:np2];
-        
+            
         }
         
         CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
@@ -61,7 +61,11 @@
         
         branch = branch2;
         branch2 = [NSMutableArray new];
-        
     }
+    
 }
+//позже попробую доделать
+//- (void)addApple:(NSArray*)points{
+//    UIImage *apple = [UIImage imageNamed:@"apple"];
+//}
 @end

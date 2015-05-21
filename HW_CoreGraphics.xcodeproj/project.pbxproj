@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		849F79B71B0D02E700F2376F /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F79B61B0D02E700F2376F /* Tree.m */; };
 		849F79BA1B0D02ED00F2376F /* Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F79B91B0D02ED00F2376F /* Points.m */; };
+		84C0A5BE1B0E12CA00ADCE79 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C0A5BD1B0E12CA00ADCE79 /* apple.png */; };
 		A86A88651AE440A4002488A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88641AE440A4002488A1 /* main.m */; };
 		A86A88681AE440A4002488A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A88671AE440A4002488A1 /* AppDelegate.m */; };
 		A86A886B1AE440A4002488A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A886A1AE440A4002488A1 /* ViewController.m */; };
@@ -33,6 +34,7 @@
 		849F79B61B0D02E700F2376F /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
 		849F79B81B0D02ED00F2376F /* Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Points.h; sourceTree = "<group>"; };
 		849F79B91B0D02ED00F2376F /* Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Points.m; sourceTree = "<group>"; };
+		84C0A5BD1B0E12CA00ADCE79 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		A86A885F1AE440A4002488A1 /* HW_CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86A88631AE440A4002488A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86A88641AE440A4002488A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		A86A88621AE440A4002488A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84C0A5BD1B0E12CA00ADCE79 /* apple.png */,
 				A86A88631AE440A4002488A1 /* Info.plist */,
 				A86A88641AE440A4002488A1 /* main.m */,
 			);
@@ -235,6 +238,7 @@
 			files = (
 				A86A886E1AE440A4002488A1 /* Main.storyboard in Resources */,
 				A86A88731AE440A4002488A1 /* LaunchScreen.xib in Resources */,
+				84C0A5BE1B0E12CA00ADCE79 /* apple.png in Resources */,
 				A86A88701AE440A4002488A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
