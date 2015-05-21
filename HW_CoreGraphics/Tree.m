@@ -42,11 +42,7 @@
     while (i > 0) {
         nowWidth /= 1.6;
         nowHeight /= 1.6;
-        int k =0;
         for (Points *p in points1) {
-            
-            NSLog(@"%d", k);
-            k++;
             CGContextMoveToPoint(context, p.point.x, p.point.y);
             
             CGPoint vector = CGPointMake(0, -nowHeight);
