@@ -28,6 +28,9 @@
     
     height = 256;
     width = 20;
+    int red = 255;
+    int green = 0;
+    int blue = 0;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -55,10 +58,12 @@
             
         }
         
-        CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+        UIColor *textColor= [UIColor colorWithRed:(red) green:(green) blue:(blue) alpha:1] ;
+        red -=50;
+        
+        CGContextSetStrokeColorWithColor(context, textColor.CGColor);
         CGContextSetLineWidth(context, width);
         CGContextStrokePath(context);
-        
         branch = branch2;
         branch2 = [NSMutableArray new];
     }
