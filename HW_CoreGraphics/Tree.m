@@ -30,13 +30,7 @@
 {
     NSArray *arr;
     
-    float const width = self.bounds.size.width;
-    float const height = self.bounds.size.height;
-    float const thumbRadius = 10;
-    float const valueWidth = 300;
-    float xCenter = (width - valueWidth) / 2.0 + valueWidth * 1;
-    
-    int i = 10;
+    int i = 8;
     double nowWidth;
     double nowHeight;
     
@@ -77,24 +71,32 @@
         points1 = points2;
         points2 = [NSMutableArray new];
         i--;
-    
+        
     }
     
-    int c = 0;
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, [UIColor darkGrayColor].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor yellowColor].CGColor);
     for (Points *s in arr) {
-        if (c % 50 == 0) {
-            [self addApple:&context xCenter:s.point.x yCenter:s.point.y];
+        if (arc4random() % 50 == 0) {
+            [self drawAppleInContext:context xCenter:s.point.x yCenter:s.point.y];
         }
-        c++;
     }
-    [self addApple:&context xCenter:xCenter - thumbRadius yCenter:height / 2.0 - thumbRadius];
     
 }
 
--(void)addApple: (CGContextRef *)context xCenter: (float)xCenter yCenter: (float)yCenter
+- (void)drawAppleInContext:(CGContextRef)context xCenter: (float)xCenter yCenter: (float)yCenter
 {
-    CGContextSetFillColorWithColor(*context, [UIColor yellowColor].CGColor);
-    CGContextFillEllipseInRect(*context, CGRectMake(xCenter, yCenter, 24, 24));
+    CGContextMoveToPoint(context, xCenter, yCenter);
+    yCenter += 6.0;
+    CGContextAddLineToPoint(context, xCenter, yCenter);
+    
+    CGContextMoveToPoint(context, xCenter, yCenter);
+    CGContextAddCurveToPoint(context, xCenter + 25, yCenter - 7.0, xCenter + 12, yCenter + 27, xCenter, yCenter + 20);
+    CGContextAddCurveToPoint(context, xCenter - 12, yCenter + 27, xCenter - 25, yCenter - 7.0, xCenter, yCenter);
+    CGContextClosePath(context);
+    
+    CGContextDrawPath(context, kCGPathFillStroke);
     
 }
 
